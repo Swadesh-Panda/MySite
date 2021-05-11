@@ -5,17 +5,51 @@
     font-family: 'poppins',sans-serif;
 
 }
+button{
+    cursor: pointer;
+}
 @media (max-width: 1130px) {
     #sdwtext{
         display: none;
     }
     #logo img{
         background-color: transparent;
-        transition: 0.3s;
     }
 }
-body{
-    background-color: rgb(63, 63, 63);
+body::after{
+
+    content: "";
+
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    top: 0px;
+    left: 0px;
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    transition: 0.5s;
+}
+.bodylght::after{
+    content: "";
+    
+    background-image: url(lgtbackground.jpg);
+    background-size: cover;
+    background-position: center;
+
+    top: 0px;
+    left: 0px;
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+
     transition: 0.5s;
 }
 /*--------------Mode---------------*/
@@ -74,7 +108,7 @@ header{
     justify-content: center;
     height: 40vw;
     
-    background-color: rgb(65, 56, 54);
+    background-color: rgba(65, 56, 54, 0.781);
 }
 #ImgCont{
     
@@ -115,8 +149,9 @@ header{
     height: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background: rgb(83, 59, 59);
+    background: rgb(109, 76, 76);
     box-shadow: inset 0px 0px 10px black;
+    border-radius: 100px;
 }
 ::-webkit-scrollbar-track-piece{
     background: rgb(0, 0, 0);
@@ -129,7 +164,7 @@ nav{
     flex-wrap: wrap;
 
     position: sticky;
-    top: -1px;
+    top: 0px;
 
     background-color: rgba(0, 0, 0, 0.336);
     box-shadow: inset 0px 20px 50px 5px black;
@@ -158,7 +193,7 @@ nav a{
 .menuNav ul{
     text-align: center;
     list-style: none;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(54, 54, 54);
     opacity: 0;
     
     display: flex;
@@ -227,44 +262,63 @@ nav a{
 }
 /*-----------------------Home Page------------------*/
 #profile{
+    margin: 5% 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+}
+#pp{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    justify-self: center;
+}
+#profile img{
+    align-self: center;
+    border-radius: 20px;
+
+    margin: 10px 0px;
+
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 #mypic{
     height: 70vh;
-    border-radius: 40px;
-    align-self: center;
-
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+#sklpic{
+    min-height: 200px;
+    max-width: 300px;
 }
 #aboutme{
-    background-color: rgb(51, 48, 48);
+    flex-grow: 20;
+    align-self: center;
+
+    margin: 0px 10px;
+    width: min-content;
+
+    background-color: rgba(27, 27, 27, 0.719);
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border: 2px solid red;
 
-    margin: 10% 0px;
     padding: 1%;
+
 }
 h2{
     padding: 1% 5px;
 
     
     color: rgba(255, 255, 255, 0.562);
-    text-decoration: underline ;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     padding: 1%;
 
+    text-align: center;
     
     color: rgba(255, 255, 255, 0.61);
     text-decoration: underline;
     font-family: Arial, Helvetica, sans-serif;
 }
 #aboutme li{
-    list-style: none;
-    padding-left: 10px;
+    margin-left: 20px;
 
     color: white;
 }
@@ -275,7 +329,21 @@ p{
 }
 /*----------------Footer-------------*/
 footer{
-    height: 20%;
+    text-align: center;
+    font-size: 200%;
     
-    background-color: rgba(255, 146, 106, 0.479);
+    background-color: rgba(255, 117, 117, 0.596);
+}
+footer i{
+    color: rgb(0, 0, 0);
+    padding: 0.5% 2%;
+    transition: 0.2s;
+}
+footer i:hover{
+    text-shadow:0px 0px 10px white;
+    transition: 0.2s;
+}
+footer i:active{
+    color: grey;
+    transition: 0.2s;
 }
