@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 
-    font-family: 'poppins',sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;  
 
 }
 button{
@@ -14,6 +14,14 @@ button{
     }
     #logo img{
         background-color: transparent;
+    }
+}
+@media (max-width: 500px) {
+    body{
+        font-size: 13px;
+    }
+    #mypic{
+        max-height: 500px;
     }
 }
 body::after{
@@ -145,12 +153,11 @@ header{
 }
 /*-------------------Scroll Bar-----------------*/
 ::-webkit-scrollbar{
-    width: 15px;
-    height: 10px;
+    width: 12px;
 }
 ::-webkit-scrollbar-thumb{
     background: rgb(109, 76, 76);
-    box-shadow: inset 0px 0px 10px black;
+    box-shadow: inset 0px 0px 4px black;
     border-radius: 100px;
 }
 ::-webkit-scrollbar-track-piece{
@@ -166,7 +173,7 @@ nav{
     position: sticky;
     top: 0px;
 
-    background-color: rgba(0, 0, 0, 0.336);
+    background-color: rgba(0, 0, 0, 0.699);
     box-shadow: inset 0px 20px 50px 5px black;
 }
 nav a{
@@ -177,7 +184,7 @@ nav a{
     height: 100%;
     font-size: 120%;
     
-    color: rgb(255, 255, 255);
+    color: rgb(137, 225, 255);
     text-decoration: white;
 }
 .menuNav{
@@ -189,6 +196,7 @@ nav a{
 }
 .optNav a{
     color: white;
+    font-family: 'Orbitron', sans-serif;
 }
 .menuNav ul{
     text-align: center;
@@ -210,7 +218,7 @@ nav a{
     padding: 10px;
     
     border-top: 2px solid rgba(255, 255, 255, 0.26);
-    font-size: 100%;
+    font-size: 130%;
 }
 
 /*-------------------nav Hover effects------------------*/
@@ -294,7 +302,7 @@ nav a{
     margin: 0px 10px;
     width: min-content;
 
-    background-color: rgba(27, 27, 27, 0.719);
+    background-color: rgba(0, 0, 0, 0.288);
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border: 2px solid red;
 
@@ -306,7 +314,7 @@ h2{
 
     
     color: rgba(255, 255, 255, 0.562);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1{
     padding: 1%;
@@ -315,15 +323,21 @@ h1{
     
     color: rgba(255, 255, 255, 0.61);
     text-decoration: underline;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: 'Arbutus', cursive;
 }
 #aboutme li{
     margin-left: 20px;
 
     color: white;
+
+    
+    font-size: 150%;
 }
 p{
     padding-left: 10px;
+
+    font-size: 150%;
 
     color: white;
 }
