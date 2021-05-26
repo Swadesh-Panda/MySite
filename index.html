@@ -15,6 +15,7 @@
 
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<meta name="description" content="website of swadesh panda">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,10 +28,10 @@
 
     <header>
         <div id="ImgCont">
-        <div  id="i1" class="headerImg"><img src="HeadImage/Seasons.jpg" alt=""></div>  
-        <div  id="i2" class="headerImg"><img src="HeadImage/Origami.jpg""></div>
-        <div id="i3" class="headerImg"><img src="HeadImage/Playstation.jpg" alt=""></div>
-        <div id="i4" class="headerImg"><img src="HeadImage/Iron Mask.jpg" alt=""></div>
+        <div  id="i1" class="headerImg"><img src="HeadImage/Seasons.jpg" alt="wallpapers"></div>  
+        <div  id="i2" class="headerImg"><img src="HeadImage/Origami.jpg" alt="origami"></div>
+        <div id="i3" class="headerImg"><img src="HeadImage/Playstation.jpg" alt="games"></div>
+        <div id="i4" class="headerImg"><img src="HeadImage/Iron Mask.jpg" alt="action"></div>
         </div>
     </header>
 
@@ -75,13 +76,13 @@
 
     </nav>
     
-    <button id="sun"><img src="light.png" alt="" height="30px" width="30px"></button>
+    <button id="sun"><img src="light.png" alt="sun" height="30px" width="30px"></button>
 
-    <button id="moon"><img src="dark.png" alt="" height="30px" width="30px"></button>
+    <button id="moon"><img src="dark.png" alt="moon" height="30px" width="30px"></button>
 
     <div id="profile">
 
-        <div id="pp"><img id="mypic" src="Mypic.jpg" alt=""></div>
+        <div id="pp"><img id="mypic" src="Mypic.jpg" alt="profile pic"></div>
 
         <div id="aboutme">
             <h1>About Me</h1>
@@ -130,7 +131,7 @@
 
         </div>
         
-        <div id="pp"><img id="sklpic" src="cmpskills.jpg" alt=""></div>
+        <div id="pp"><img id="sklpic" src="cmpskills.jpg" alt="laptop"></div>
 
     </div>
 
@@ -142,11 +143,18 @@
     </footer>
 
     <div id="logo">
-        <img src="Shadow.jpg" alt="">
-        <img id="sdwtext" src="ShadowText.png" alt="">
+        <img src="Shadow.jpg" alt="shadow logo">
+        <img id="sdwtext" src="ShadowText.png" alt="shadow text">
     </div>
     
-<button id="upBtnUp"><img src="up.png" height="48px" width="48px" alt=""></button>
+<button id="upBtnUp"><img src="up.png" height="48px" width="48px" alt="scroll up"></button>
+
 <script src="script.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+    </script>
 </body>
 </html>
